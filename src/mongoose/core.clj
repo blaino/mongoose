@@ -1,10 +1,3 @@
-;;(ns mongoose.core)
-
-; Inspired by the snakes that have gone before:
-; Abhishek Reddy's snake: http://www.plt1.com/1070/even-smaller-snake/
-; Mark Volkmann's snake: http://www.ociweb.com/mark/programming/ClojureSnake.html 
-
-
 (ns mongoose.core
   (:import (java.awt Color Dimension) 
 	   (javax.swing JPanel JFrame Timer JOptionPane)
@@ -14,16 +7,6 @@
         [clojure.contrib.math :only (abs)]
         clojure.set)
   (:gen-class :main true))
-
-
-(defn foo
-  "I don't do a whole lot."
-  [x]
-  (println x "Hello, World!"))
-
-(defn -main [& args]
-  (if (not (empty? args))
-    (foo (Integer/parseInt (first args)))))
 
 
 (import-static java.awt.event.KeyEvent VK_LEFT VK_RIGHT VK_UP VK_DOWN)
@@ -55,10 +38,6 @@
 
 (defn random-location []
   [(rand-int width) (rand-int height)])
-
-;; (defn shuffle [coll]
-;;   (seq (doto (java.util.ArrayList. coll)
-;; 	 java.util.Collections/shuffle)))
 
 (defn random-dir []
   (second (nth (vec dirs) (rand-int 3))))
