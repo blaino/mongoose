@@ -1,10 +1,13 @@
 # mongoose
 
-A Clojure library designed to ... well, that part is up to you.
+Another snake program to explore concurrency features, this one with
+deadly mongooses.  Based on Stuart Holloway's from his Programming Clojure book:
+https://github.com/stuarthalloway/programming-clojure/blob/master/src/examples/snake.clj
 
 ## Usage
 
-FIXME
+lein repl
+> (game)
 
 ## License
 
